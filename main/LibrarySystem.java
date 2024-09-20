@@ -1,5 +1,5 @@
-public class LibrarySystem{
-    void manageBooks(){
-        System.out.println("Books managed!");
+public class LibrarySystem {
+    public void manageBooks(String bookId, String action) {
+        System.out.println("Action '" + action + "' performed on book: " + bookId);
     }
 }
