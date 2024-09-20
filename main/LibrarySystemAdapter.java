@@ -8,5 +8,4 @@ public class LibrarySystemAdapter implements SchoolManagementApp{
     public void integrateSystem(){
         librarySystem.manageBooks();
     }
-
 }
