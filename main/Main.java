@@ -12,7 +12,7 @@ public class Main {
 
        
        attendanceAdapter.integrateSystem("11123");
-       gradingAdapter.integrateSystem("07151", "J");
+       gradingAdapter.integrateSystem("21-13735-787", "A");
        libraryAdapter.integrateSystem("Book_1", "ADD");
    }
 }
