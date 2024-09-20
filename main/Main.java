@@ -1,15 +1,18 @@
-public class Main{
-    public static void main(String args[]){
-        AttendanceSystem attendanceSystem = new AttendanceSystem();
-        GradingSystem gradingSystem = new GradingSystem();
-        LibrarySystem librarySystem = new LibrarySystem();
+public class Main {
+   public static void main(String[] args) {
+       
+       AttendanceSystem attendanceSystem = new AttendanceSystem();
+       GradingSystem gradingSystem = new GradingSystem();
+       LibrarySystem librarySystem = new LibrarySystem();
 
-        AttendanceSystemAdapter attendanceSystemAdapter = new AttendanceSystemAdapter(attendanceSystem);
-        GradingSystemAdapter GradingSystemAdapter = new GradingSystemAdapter(gradingSystem);
-        LibrarySystemAdapter librarySystemAdapter = new LibrarySystemAdapter(librarySystem);
-        
-        AttendanceSystemAdapter.integrateSystem();
-        GradingSystemAdapter.integrateSystem();
-        LibrarySystemAdapter.integrateSystem();
-    }
+      
+       SchoolManagementApp attendanceAdapter = new AttendanceSystemAdapter(attendanceSystem);
+       SchoolManagementApp gradingAdapter = new GradingSystemAdapter(gradingSystem);
+       SchoolManagementApp libraryAdapter = new LibrarySystemAdapter(librarySystem);
+
+       
+       attendanceAdapter.integrateSystem("22724");
+       gradingAdapter.integrateSystem("13139", "A");
+       libraryAdapter.integrateSystem("Book_12", "add");
+   }
 }
