@@ -11,8 +11,8 @@ public class Main {
        SchoolManagementApp libraryAdapter = new LibrarySystemAdapter(librarySystem);
 
        
-       attendanceAdapter.integrateSystem("22724");
-       gradingAdapter.integrateSystem("13139", "A");
-       libraryAdapter.integrateSystem("Book_12", "add");
+       attendanceAdapter.integrateSystem("11123");
+       gradingAdapter.integrateSystem("07151", "J");
+       libraryAdapter.integrateSystem("Book_1", "ADD");
    }
 }
