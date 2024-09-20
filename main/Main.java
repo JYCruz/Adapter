@@ -8,8 +8,8 @@ public class Main{
         GradingSystemAdapter GradingSystemAdapter = new GradingSystemAdapter(gradingSystem);
         LibrarySystemAdapter librarySystemAdapter = new LibrarySystemAdapter(librarySystem);
         
-        attendanceSystemAdapter.integrateSystem();
+        AttendanceSystemAdapter.integrateSystem();
         GradingSystemAdapter.integrateSystem();
-        librarySystemAdapter.integrateSystem();
+        LibrarySystemAdapter.integrateSystem();
     }
 }
