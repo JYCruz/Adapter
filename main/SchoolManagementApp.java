@@ -1,3 +1,3 @@
-public interface SchoolManagementApp{
-  void integrate.System();
+public interface SchoolManagementApp {
+    void integrateSystem(String... args);
 }
