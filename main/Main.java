@@ -11,6 +11,5 @@ public class Main{
         attendanceSystemAdapter.integrateSystem();
         GradingSystemAdapter.integrateSystem();
         librarySystemAdapter.integrateSystem();
-
     }
 }
