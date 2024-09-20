@@ -1,4 +1,4 @@
-public class GradingSystemAdapter implements SchoolManagementApp{
+public class GradingSystemAdapter implements SchoolManagementApp {
     private GradingSystem gradingSystem;
 
     public GradingSystemAdapter(GradingSystem gradingSystem) {
@@ -6,7 +6,9 @@ public class GradingSystemAdapter implements SchoolManagementApp{
     }
 
     @Override
-    public void integrateSystem(){
-        gradingSystem.recordGrades();
+    public void integrateSystem(String... args) {
+        if (args.length > 1) {
+            gradingSystem.recordGrades(args[0], args[1]);
+        }
     }
 }
